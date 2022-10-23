@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,500;1,900&display=swap");
+body {
+  background: #0f0e17;
+  color: #a7a9be;
+}
+
+button {
+  background: #ff8906;
+  color: #fffffe;
+}
+
+p {
+  color: #a7a9be;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fffffe;
+  transition: all 0.4s ease;
+}
+.nav-link:hover {
+  color: #ff8906;
+}/*# sourceMappingURL=style.css.map */
