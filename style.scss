@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,500;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
 
 $background-clr: #0f0e17;
 $headline-clr: #fffffe;
@@ -6,9 +6,12 @@ $paragraph-clr: #a7a9be;
 $button-clr: #ff8906;
 $button-txt-clr: #fffffe;
 
+
+
 body{
     background: $background-clr;
     color: $paragraph-clr;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 button{
@@ -18,17 +21,23 @@ button{
 
 p{
     color: $paragraph-clr;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
     color: $headline-clr;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 700;
 }
 
 .nav-link{
     text-decoration: none;
     color: $button-txt-clr;
     transition: all .4s ease;
+    font-family: 'Bai Jamjuree';
     &:hover{
         color: $button-clr;
     }
+    
 }
+
