@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,700;1,500&display=swap");
+body {
+  background: #0f0e17;
+  color: #a7a9be;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+button {
+  background: #ff8906;
+  color: #fffffe;
+}
+
+p {
+  color: #a7a9be;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fffffe;
+  transition: all 0.4s ease;
+  font-family: "Bai Jamjuree";
+}
+.nav-link:hover {
+  color: #ff8906;
+}
+
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  margin-right: 0px !important;
+}
+
+.navbar-brand img {
+  width: 200px;
+  height: 200px;
+  border: 8px solid #ff8906;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: 280px;
+    background: linear-gradient(rgb(15, 14, 23), rgba(15, 14, 23, 0.9)), url("../img/pexels-hristo-fidanov-1252869.jpg");
+    background-size: cover;
+  }
+}/*# sourceMappingURL=style.css.map */
