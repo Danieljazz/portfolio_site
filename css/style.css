@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,700;1,500&display=swap");
+body {
+  background: #0f0e17;
+  color: #a7a9be;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+button {
+  background: #ff8906;
+  color: #fffffe;
+}
+
+p {
+  color: #a7a9be;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fffffe;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fffffe;
+  transition: all 0.4s ease;
+  font-family: "Bai Jamjuree";
+}
+.nav-link:hover {
+  color: #ff8906;
+}
+
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navbar-brand img {
+  width: 200px;
+  height: 200px;
+  border: 8px solid #ff8906;
+}
+
+.navbar {
+  background-color: #0f0e17;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #fffffe;
+  background-color: #ff8906;
+  border-radius: 12px;
+  padding: 15px 15px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.underline-button {
+  text-decoration: none;
+  color: #fffffe;
+  font-weight: 700;
+  position: relative;
+}
+.underline-button::after {
+  content: "";
+  width: 0%;
+  background: #fffffe;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  transition: all 0.4s;
+}
+.underline-button:hover {
+  color: #fffffe;
+}
+.underline-button:hover::after {
+  width: 110px;
+  color: #fffffe;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: 280px;
+    background: linear-gradient(rgba(15, 14, 23, 0.7), rgba(15, 14, 23, 0.9)), url("../img/pexels-hristo-fidanov-1252869.jpg");
+    background-size: cover;
+  }
+  #content-wrapper {
+    margin-left: 280px;
+  }
+}/*# sourceMappingURL=style.css.map */
