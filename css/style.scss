@@ -46,21 +46,65 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
 }
 
-.navbar-brand{
-    margin-right: 0px !important;
-}
-
 .navbar-brand img{
     width: 200px;
     height: 200px;
     border: 8px solid $button-clr;
 }
 
+ .navbar{
+    background-color: $background-clr;
+ }
+
+ .link-button{
+    text-decoration: none;
+    color: $button-txt-clr;
+    background-color: $button-clr;
+    border-radius: 12px;
+    padding: 15px 15px;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+  
+.underline-button{
+    text-decoration: none;
+    color: $button-txt-clr;
+    font-weight: 700;
+    position: relative;
+    &::after{
+        content: '';
+        width: 0%;
+        background: $button-txt-clr;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 2px;
+        transition: all .4s;
+    }
+    &:hover{
+        color: $button-txt-clr;
+    }
+    &:hover::after{
+        width: 110px;
+        color: $button-txt-clr;
+    }
+}
+
 @media (min-width: 992px){
     .navbar{
     min-height: 100vh; 
     width: $sidebar-width;
-    background: linear-gradient(rgba(15, 14, 23, 1), rgba(15, 14, 23, 0.9)), url('../img/pexels-hristo-fidanov-1252869.jpg');
+    background: linear-gradient(rgba(15, 14, 23, 0.7), rgba(15, 14, 23, 0.9)), url('../img/pexels-hristo-fidanov-1252869.jpg');
     background-size: cover;
     }
+    #content-wrapper{
+        margin-left: $sidebar-width;
+      }
 }

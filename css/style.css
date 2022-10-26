@@ -36,21 +36,65 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-.navbar-brand {
-  margin-right: 0px !important;
-}
-
 .navbar-brand img {
   width: 200px;
   height: 200px;
   border: 8px solid #ff8906;
 }
 
+.navbar {
+  background-color: #0f0e17;
+}
+
+.link-button {
+  text-decoration: none;
+  color: #fffffe;
+  background-color: #ff8906;
+  border-radius: 12px;
+  padding: 15px 15px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.underline-button {
+  text-decoration: none;
+  color: #fffffe;
+  font-weight: 700;
+  position: relative;
+}
+.underline-button::after {
+  content: "";
+  width: 0%;
+  background: #fffffe;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  transition: all 0.4s;
+}
+.underline-button:hover {
+  color: #fffffe;
+}
+.underline-button:hover::after {
+  width: 110px;
+  color: #fffffe;
+}
+
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
     width: 280px;
-    background: linear-gradient(rgb(15, 14, 23), rgba(15, 14, 23, 0.9)), url("../img/pexels-hristo-fidanov-1252869.jpg");
+    background: linear-gradient(rgba(15, 14, 23, 0.7), rgba(15, 14, 23, 0.9)), url("../img/pexels-hristo-fidanov-1252869.jpg");
     background-size: cover;
+  }
+  #content-wrapper {
+    margin-left: 280px;
   }
 }/*# sourceMappingURL=style.css.map */
