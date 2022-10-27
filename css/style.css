@@ -87,6 +87,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #fffffe;
 }
 
+.brand-text {
+  color: #ff8906;
+}
+
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
