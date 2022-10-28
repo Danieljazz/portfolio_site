@@ -87,6 +87,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #fffffe;
 }
 
+.brand-text {
+  color: #ff8906;
+}
+
+.service-card {
+  background-color: #2d2b3b;
+  transition: all 0.4s;
+}
+
+.service-card:hover {
+  box-shadow: 15px 15px rgb(3, 110, 46);
+}
+
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
