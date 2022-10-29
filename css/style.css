@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
 }
+.navbar .nav-link.active {
+  color: #ff8906;
+}
 
 .navbar-brand img {
   width: 200px;
@@ -52,8 +55,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #ff8906;
   border-radius: 12px;
   padding: 15px 15px;
-  margin-top: 5px;
   font-weight: 700;
+  display: inline-block;
 }
 
 .full-height {
@@ -68,6 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fffffe;
   font-weight: 700;
   position: relative;
+  display: inline-block;
 }
 .underline-button::after {
   content: "";
@@ -91,13 +95,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff8906;
 }
 
-.service-card {
+.experience-card {
   background-color: #2d2b3b;
-  transition: all 0.4s;
+}
+.experience-card .experience-header {
+  display: flex;
+  align-items: center;
 }
 
-.service-card:hover {
-  box-shadow: 15px 15px rgb(3, 110, 46);
+.experience-card:hover .experience-header .la-bug {
+  color: green;
+}
+.experience-card:hover .experience-header .la-university {
+  color: rgb(102, 102, 194);
+}
+.experience-card:hover .experience-header .la-code {
+  color: rgb(179, 38, 179);
+}
+
+.shadow-effect {
+  transition: all 1s;
+}
+.shadow-effect:hover {
+  box-shadow: -6px 6px rgb(3, 110, 46);
+}
+
+.experience-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience-icon .la-bug {
+  transition: 500ms;
+  color: red;
 }
 
 @media (min-width: 992px) {
