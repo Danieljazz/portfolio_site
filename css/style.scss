@@ -42,6 +42,13 @@ h1, h2, h3, h4, h5, h6{
     
 }
 
+img {
+    width: 100%;
+}
+
+
+
+
 .navbar .nav-link {
     font-weight: 700;
     text-transform: uppercase;
@@ -61,6 +68,25 @@ h1, h2, h3, h4, h5, h6{
     background-color: $background-clr;
  }
 
+ button{
+    @extend .link-button;
+    width: 200px;
+    font-size: 24px;
+    position: relative;
+    text-align: left;
+    
+    & i{
+        font-size: 24px;
+        position: absolute;
+        top: 35%;
+        left: 40%;
+        transition: all 1s;
+    }
+    &:hover i{
+        transform: translateX(350%);
+        
+    }
+ }
  .link-button{
     text-decoration: none;
     color: $button-txt-clr;
@@ -107,13 +133,14 @@ h1, h2, h3, h4, h5, h6{
     color: $button-clr;
 }
 
-.experience-card{
+.card-bg{
     background-color: $background-clr2;
-    .experience-header{
+}
+
+.experience-card .experience-header{
     display: flex;
     align-items: center;
     }
-}
 
 .experience-card:hover{
     .experience-header .la-bug{
@@ -129,12 +156,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .shadow-effect {
-    transition: all 1s;
+    transition: all 0.5s;
     &:hover {
-        box-shadow: -6px 6px $shadow-color;
+        box-shadow: -10px 10px $shadow-color;
     }
 }
 
+section{
+    border-bottom: 2px solid $background-clr2
+}
 
 .experience-icon{
     width: 60px;
@@ -149,6 +179,41 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
+.project-card .project-snapshot{
+    overflow: hidden;
+}
+
+
+.project-card .project-snapshot img{
+    transition: all 0.4s ease;
+}
+
+.project-card:hover .project-snapshot img{
+    transform: scale(1.1);
+}
+
+.project-card .project-description .project-technologies{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 32px;
+    & i{
+        &.la-js-square{
+        color: rgb(154, 154, 42);}
+        &.la-react{
+            color: rgb(57, 57, 182);
+        }
+        &.la-sass{
+            color: pink;
+        }
+        &.la-html5{
+            color: red;
+        }
+        &.la-bootstrap{
+            color: violet;
+        }
+    }
+}
 
 @media (min-width: 992px){
     .navbar{
@@ -160,4 +225,7 @@ h1, h2, h3, h4, h5, h6{
     #content-wrapper{
         margin-left: $sidebar-width;
       }
+    section{
+        padding: 2px;
+    }
 }

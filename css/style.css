@@ -31,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff8906;
 }
 
+img {
+  width: 100%;
+}
+
 .navbar .nav-link {
   font-weight: 700;
   text-transform: uppercase;
@@ -49,7 +53,24 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0f0e17;
 }
 
-.link-button {
+button {
+  width: 200px;
+  font-size: 24px;
+  position: relative;
+  text-align: left;
+}
+button i {
+  font-size: 24px;
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  transition: all 1s;
+}
+button:hover i {
+  transform: translateX(350%);
+}
+
+.link-button, button {
   text-decoration: none;
   color: #fffffe;
   background-color: #ff8906;
@@ -95,9 +116,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff8906;
 }
 
-.experience-card {
+.card-bg {
   background-color: #2d2b3b;
 }
+
 .experience-card .experience-header {
   display: flex;
   align-items: center;
@@ -114,10 +136,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .shadow-effect {
-  transition: all 1s;
+  transition: all 0.5s;
 }
 .shadow-effect:hover {
-  box-shadow: -6px 6px rgb(3, 110, 46);
+  box-shadow: -10px 10px rgb(3, 110, 46);
+}
+
+section {
+  border-bottom: 2px solid #2d2b3b;
 }
 
 .experience-icon {
@@ -133,6 +159,40 @@ h1, h2, h3, h4, h5, h6 {
   color: red;
 }
 
+.project-card .project-snapshot {
+  overflow: hidden;
+}
+
+.project-card .project-snapshot img {
+  transition: all 0.4s ease;
+}
+
+.project-card:hover .project-snapshot img {
+  transform: scale(1.1);
+}
+
+.project-card .project-description .project-technologies {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 32px;
+}
+.project-card .project-description .project-technologies i.la-js-square {
+  color: rgb(154, 154, 42);
+}
+.project-card .project-description .project-technologies i.la-react {
+  color: rgb(57, 57, 182);
+}
+.project-card .project-description .project-technologies i.la-sass {
+  color: pink;
+}
+.project-card .project-description .project-technologies i.la-html5 {
+  color: red;
+}
+.project-card .project-description .project-technologies i.la-bootstrap {
+  color: violet;
+}
+
 @media (min-width: 992px) {
   .navbar {
     min-height: 100vh;
@@ -142,5 +202,8 @@ h1, h2, h3, h4, h5, h6 {
   }
   #content-wrapper {
     margin-left: 280px;
+  }
+  section {
+    padding: 2px;
   }
 }/*# sourceMappingURL=style.css.map */
