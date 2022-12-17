@@ -178,7 +178,7 @@ section {
 }
 
 .project-card .project-description {
-  min-height: 300px;
+  height: 100%;
 }
 .project-card .project-description .project-technologies {
   display: flex;
