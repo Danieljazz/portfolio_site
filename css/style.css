@@ -120,6 +120,9 @@ button:hover i {
   background-color: #2d2b3b;
 }
 
+.experience-card {
+  min-height: 250px;
+}
 .experience-card .experience-header {
   display: flex;
   align-items: center;
@@ -159,6 +162,9 @@ section {
   color: red;
 }
 
+.project-card {
+  min-height: 450px;
+}
 .project-card .project-snapshot {
   overflow: hidden;
 }
@@ -171,6 +177,9 @@ section {
   transform: scale(1.1);
 }
 
+.project-card .project-description {
+  min-height: 300px;
+}
 .project-card .project-description .project-technologies {
   display: flex;
   align-items: center;

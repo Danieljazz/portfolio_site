@@ -137,10 +137,12 @@ img {
     background-color: $background-clr2;
 }
 
-.experience-card .experience-header{
+.experience-card{ 
+    min-height: 250px;
+    .experience-header{
     display: flex;
     align-items: center;
-    }
+    }}
 
 .experience-card:hover{
     .experience-header .la-bug{
@@ -179,9 +181,11 @@ section{
     }
 }
 
-.project-card .project-snapshot{
+.project-card{ 
+    min-height: 450px;
+    .project-snapshot{
     overflow: hidden;
-}
+}}
 
 
 .project-card .project-snapshot img{
@@ -192,7 +196,9 @@ section{
     transform: scale(1.1);
 }
 
-.project-card .project-description .project-technologies{
+.project-card .project-description{ 
+    min-height: 300px;
+    .project-technologies{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -213,7 +219,7 @@ section{
             color: violet;
         }
     }
-}
+}}
 
 @media (min-width: 992px){
     .navbar{
