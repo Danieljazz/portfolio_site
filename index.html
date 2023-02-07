@@ -1,191 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Daniel's Portfolio</title>
-    </head>
-    <body data-bs-spy="scroll" data-bs-target=".navbar">
-        <nav class="navbar navbar-expand-lg navbar-dark text-center fixed-top" data-aos="fade-right" data-aos-delay="300" >
-            <div class="container flex-lg-column">
-                <a class="navbar-brand mx-lg-auto" href="#">
-                    <span class="h3 fw-bold text-color-black d-lg-none" data-aos="fade-in" data-aos-delay="1000"></span>
-                    <img src="./img/ja2.jpg" class="d-none d-lg-inline rounded-circle" alt="" data-aos="fade-in" data-aos-delay="900" data-aos-duration="700">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav ms-auto flex-lg-column center">
-                        <li class="nav-item" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800"> 
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item" data-aos="fade-right" data-aos-delay="450" data-aos-duration="800"> 
-                            <a href="#experience" class="nav-link">Experience</a>
-                        </li>
-                        <li class="nav-item" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
-                            <a href="#projects" class="nav-link">Projects</a>
-                        </li>
-                        <li class="nav-item" data-aos="fade-right" data-aos-delay="550" data-aos-duration="800">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div id="content-wrapper" class="mt-5 px-5">
-            <!-- HOME SECTION-->
-            <section id="home" class="full-height">
-                <div class="container mt-5">
-                    <h1 class="display-3 fw-bold" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1200"> 
-                        HI :) 
-                        <p style="color: white;"> 
-                            I'M Daniel welcome on my <span style="color: rgb(59, 116, 163);">portfolio site </span>
-                        </p>
-                    </h1>
-                    <p class="lead mt-5" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
-                        I work as QA Automation Engineer. I love expanding my knowledege so I build this website to 
-                        show my frontend skills. You can see my projects by clicking on the orange button. 
-                        If you want to cooperate contact me usign Contact button.</p>
-                    <a href="#projects" class="link-button mt-5" data-aos="fade-in" data-aos-delay="1700" data-aos-duration="1200">Explore My Projects</a>
-                    <a href="#contact" class="underline-button mx-4" data-aos="fade-in" data-aos-delay="1700" data-aos-duration="1200">Contact</a>
-                </div>
-            </section>
-            <!-- //HOME SECTION-->
-            <!-- EXPERIENCE SECTION-->
-            <section id="experience" class="full-height">
-                <div class="container">
-                    <p class="lead brand-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">EXPERIENCE</p>
-                    <h1 class="display-3 bold" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">My Experience</h1>
-                    <div class="row mt-5 gy-4">
-                        <div class="col-xl-4 "data-aos="zoom-out" data-aos-delay="1000" data-aos-duration="2000">
-                            <div class="experience-card card-bg  p-4 rounded-4 shadow-effect" >
-                                <div class="experience-header">
-                                    <div class="experience-icon">
-                                        <i class="las la-university"></i>
-                                    </div>
-                                    <h3>Studies</h3>
-                                </div>
-                                <p>I studied Automatic and Robotic at University of Science 
-                                    AGH in Cracow. I learnt a lot about programming, automatic and robotics.</p>
-                            </div>
-                        </div>
-                        <div class="col-xl-4" data-aos="zoom-out" data-aos-delay="1300" data-aos-duration="2000">
-                            <div class="experience-card card-bg  p-4 rounded-4 shadow-effect" >
-                                <div class="experience-header">
-                                    <div class="experience-icon">
-                                        <i class="las la-bug"></i>
-                                    </div>
-                                    <h3>QA - Testing</h3>
-                                </div>
-                                <p>I have been working as QA UI automated tester using Python since March 2021.</p>  
-                            </div>
-                        </div>
-                        <div class="col-xl-4" data-aos="zoom-out" data-aos-delay="1500" data-aos-duration="2000">
-                            <div class="experience-card p-4 card-bg rounded-4 shadow-effect" >
-                                <div class="experience-header">
-                                    <div class="experience-icon">
-                                        <i class="las la-code"></i>
-                                    </div>
-                                    <h3>UI - Development</h3>
-                                </div>
-                                <p>This year I have learnt frontend tools like Bootstrap, React or Redux. You can see me project down below.</p>  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //EXPERIENCE SECTION-->
-            <!-- PROJECTS SECTION-->
-            <section id="projects" class="full-height pt-4 pb-4">
-                <div class="container">
-                    <p class="lead brand-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">PROJECTS</p>
-                    <h1 class="display-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Recent Projects</h1>
-                    <div class="row  gy-4">
-                        <div class="col-xl-6 rounded-4 " data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
-                            <div class="project-card rounded-4 card-bg shadow-effect" >
-                                <div class="project-snapshot rounded-4">
-                                    <img src="/img/store20.png" alt="">
-                                </div>
-                                <div class="project-description p-4">
-                                    <h3>E-commerce store</h3>
-                                    <p class="lead">
-                                        For my first React project I created clothing full stack e-commerce store app. In this 
-                                        project I used MongoDB for getting orders, users, and items. For bacend I used Node.js with Express
-                                        to build backend for connecting to Mongo and to make simple requests. For UI I used mentioned React 
-                                        with styled components. To make requests in React I used axios library. For user authentication I used
-                                        JWT. To handle the cart and logged  user I used Redux library.
-                                    </p>
-                                    <div class="project-technologies mt-2">
-                                        <i data-toggle="tooltip" data-placement="bottom" title="MongoDB" class="las la-server"></i>
-                                        <i data-toggle="tooltip" data-placement="bottom" title="Node.js" class="lab la-node-js"></i>
-                                        <i data-toggle="tooltip" data-placement="bottom" title="React" class="lab la-react"></i>
-                                    </div>
-                                    <a target="_blank" href="https://neobonk.onrender.com/" class="underline-button">Click there!</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-6 rounded-4 " data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
-                            <div class="project-card rounded-4 card-bg shadow-effect" >
-                                <div class="project-snapshot rounded-4">
-                                    <img src="/img/Smart_mirror.jpg" alt="">
-                                </div>
-                                <div class="project-description p-4">
-                                    <h3>Smart mirror</h3>
-                                    <p class="lead" style="margin-bottom: 87px">
-                                       For my BSc Thesis I made smart mirror based on Raspberry Pi 4.
-                                        I added temperature and humidity information using sensors DHT 11.
-                                        To keeep mirror active when user is nearby I used  motion sensor.
-                                        UI of the project is based on python's tkinter library.
-                                        I wanted to include neccessary informations on the screen so I used OpenWeatherMap - for weather, 
-                                        NewsApi - to get current news headers and Google Calendar to display user events.
-                                    </p>
-                                    <div class="project-technologies mt-2" style="margin-bottom: 23px">
-                                        <i data-toggle="tooltip" data-placement="bottom" title="Python" class="lab la-python"></i>
-                                        <i style="color: orange" data-toggle="tooltip" data-placement="bottom" title="OpenWeatherMap"  class="las la-sun"></i>
-                                        <i data-toggle="tooltip" data-placement="bottom" title="Google Calendar"  class="las la-calendar"></i>
-                                        <i style="color: rgb(63, 63, 149)" data-toggle="tooltip" data-placement="bottom" title="NewsApi" class="las la-newspaper"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- //PROJECTS SECTION-->
-            <!-- CONTACT SECTION-->
-            <section id="contact" class="full-height">
-                <div class="container">
-                    <p class="lead brand-text">CONTACT</p>
-                    <h1 class="display-3 bold">Interested In Working Toegheter?</h1>
-                        <form action="POST" class="row g-lg-3 gy-3 mx-auto mt-5" data-netlify="true" onSubmit="submit"
-                            data-netlify-honeypot="bot-field" name="contact">
-                                <input  name="bot-field" class="d-none"/>
-                                <div class="form-group col-md-6">
-                                    <input name="name" type="text" class="form-control" placeholder="Name" id="input-name" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input name="email" type="email" class="form-control" placeholder="Email" id="input-email" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500">
-                                </div>
-                            <div class="from-row">
-                                <textarea name="message" class="form-control" id="content-input" cols="4" rows="12" placeholder="Enter message here" data-aos="fade-in" data-aos-delay="200" data-aos-duration="3000"></textarea>
-                            </div>
-                            <div class="form-row">
-                                <button type="submit" class="link-button" data-aos="fade-in" data-aos-delay="200" data-aos-duration="3000">Send 
-                                    <i class="las la-paper-plane"></i>
-                                </button></div>
-                        </form>
-                </div>
-            </section>
-            <!-- //CONTACT SECTION-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Daniel's Portfolio</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark text-center fixed-top"
+      data-aos="fade-right"
+      data-aos-delay="300"
+    >
+      <div class="container flex-lg-column">
+        <a class="navbar-brand mx-lg-auto" href="#">
+          <span
+            class="h3 fw-bold text-color-black d-lg-none"
+            data-aos="fade-in"
+            data-aos-delay="1000"
+          ></span>
+          <img
+            src="./img/ja2.jpg"
+            class="d-none d-lg-inline rounded-circle"
+            alt=""
+            data-aos="fade-in"
+            data-aos-delay="900"
+            data-aos-duration="700"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto flex-lg-column center">
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-delay="400"
+              data-aos-duration="800"
+            >
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-delay="450"
+              data-aos-duration="800"
+            >
+              <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-delay="500"
+              data-aos-duration="800"
+            >
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li
+              class="nav-item"
+              data-aos="fade-right"
+              data-aos-delay="550"
+              data-aos-duration="800"
+            >
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="./main.js"></script>
-    </body>
+      </div>
+    </nav>
+    <div id="content-wrapper" class="mt-5 px-5">
+      <!-- HOME SECTION-->
+      <section id="home" class="full-height">
+        <div class="container mt-5">
+          <h1
+            class="display-3 fw-bold"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1200"
+          >
+            HI :)
+            <p style="color: white">
+              I'M Daniel welcome on my
+              <span style="color: rgb(59, 116, 163)">portfolio site </span>
+            </p>
+          </h1>
+          <p
+            class="lead mt-5"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            data-aos-duration="1000"
+          >
+            I work as QA Automation Engineer. I love expanding my knowledge so I
+            build this website to show my frontend skills. You can see my
+            projects by clicking on the orange button. If you want to cooperate
+            contact me usign Contact button.
+          </p>
+          <a
+            href="#projects"
+            class="link-button mt-5"
+            data-aos="fade-in"
+            data-aos-delay="1700"
+            data-aos-duration="1200"
+            >Explore My Projects</a
+          >
+          <a
+            href="#contact"
+            class="underline-button mx-4"
+            data-aos="fade-in"
+            data-aos-delay="1700"
+            data-aos-duration="1200"
+            >Contact</a
+          >
+        </div>
+      </section>
+      <!-- //HOME SECTION-->
+      <!-- EXPERIENCE SECTION-->
+      <section id="experience" class="full-height">
+        <div class="container">
+          <p
+            class="lead brand-text"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            EXPERIENCE
+          </p>
+          <h1
+            class="display-3 bold"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
+            My Experience
+          </h1>
+          <div class="row mt-5 gy-4">
+            <div
+              class="col-xl-4"
+              data-aos="zoom-out"
+              data-aos-delay="1000"
+              data-aos-duration="2000"
+            >
+              <div class="experience-card card-bg p-4 rounded-4 shadow-effect">
+                <div class="experience-header">
+                  <div class="experience-icon">
+                    <i class="las la-university"></i>
+                  </div>
+                  <h3>Studies</h3>
+                </div>
+                <p>
+                  I studied Automatic and Robotic at University of Science AGH
+                  in Cracow. I learnt a lot about programming, automatic and
+                  robotics.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-4"
+              data-aos="zoom-out"
+              data-aos-delay="1300"
+              data-aos-duration="2000"
+            >
+              <div class="experience-card card-bg p-4 rounded-4 shadow-effect">
+                <div class="experience-header">
+                  <div class="experience-icon">
+                    <i class="las la-bug"></i>
+                  </div>
+                  <h3>QA - Testing</h3>
+                </div>
+                <p>
+                  I have been working as QA UI automated tester using Python
+                  since March 2021.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-4"
+              data-aos="zoom-out"
+              data-aos-delay="1500"
+              data-aos-duration="2000"
+            >
+              <div class="experience-card p-4 card-bg rounded-4 shadow-effect">
+                <div class="experience-header">
+                  <div class="experience-icon">
+                    <i class="las la-code"></i>
+                  </div>
+                  <h3>UI - Development</h3>
+                </div>
+                <p>
+                  This year I have learnt frontend tools like Bootstrap, React
+                  or Redux. You can see me project down below.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //EXPERIENCE SECTION-->
+      <!-- PROJECTS SECTION-->
+      <section id="projects" class="full-height pt-4 pb-4">
+        <div class="container">
+          <p
+            class="lead brand-text"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            PROJECTS
+          </p>
+          <h1
+            class="display-3"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            Recent Projects
+          </h1>
+          <div class="row gy-4">
+            <div
+              class="col-xl-6 rounded-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              <div class="project-card rounded-4 card-bg shadow-effect">
+                <div class="project-snapshot rounded-4">
+                  <img src="/img/store20.png" alt="" />
+                </div>
+                <div class="project-description p-4">
+                  <h3>E-commerce store</h3>
+                  <p class="lead">
+                    For my first React project, I created a clothing full stack
+                    e-commerce store app. In this project, I used MongoDB for
+                    getting orders, users, and items. I used Node.js with
+                    Express to build a backend for connecting to the database
+                    and making simple requests. For UI I used mentioned React
+                    with styled-components. To make requests in React I used the
+                    Axios library. For user authentication I used JWT. To handle
+                    the cart and logged user I used Redux library.
+                  </p>
+                  <div class="project-technologies mt-2">
+                    <i
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="MongoDB"
+                      class="las la-server"
+                    ></i>
+                    <i
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Node.js"
+                      class="lab la-node-js"
+                    ></i>
+                    <i
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="React"
+                      class="lab la-react"
+                    ></i>
+                  </div>
+                  <a
+                    target="_blank"
+                    href="https://neobonk.onrender.com/"
+                    class="underline-button"
+                    >Click there!</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 rounded-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+            >
+              <div class="project-card rounded-4 card-bg shadow-effect">
+                <div class="project-snapshot rounded-4">
+                  <img src="/img/Smart_mirror.jpg" alt="" />
+                </div>
+                <div class="project-description p-4">
+                  <h3>Smart mirror</h3>
+                  <p class="lead" style="margin-bottom: 87px">
+                    For my BSc Thesis, I made a smart mirror based on Raspberry
+                    Pi 4. I added temperature and humidity information using
+                    sensor DHT 11. To keep the mirror active when the user is
+                    nearby I used a motion sensor. The user interface of the
+                    project is based on python's Tkinter library. I wanted to
+                    include necessary information on the screen so I used
+                    OpenWeatherMap - for weather, NewsApi - to get current news
+                    headers and Google Calendar to display user events.
+                  </p>
+                  <div
+                    class="project-technologies mt-2"
+                    style="margin-bottom: 23px"
+                  >
+                    <i
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Python"
+                      class="lab la-python"
+                    ></i>
+                    <i
+                      style="color: orange"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="OpenWeatherMap"
+                      class="las la-sun"
+                    ></i>
+                    <i
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="Google Calendar"
+                      class="las la-calendar"
+                    ></i>
+                    <i
+                      style="color: rgb(63, 63, 149)"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="NewsApi"
+                      class="las la-newspaper"
+                    ></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //PROJECTS SECTION-->
+      <!-- CONTACT SECTION-->
+      <section id="contact" class="full-height">
+        <div class="container">
+          <p class="lead brand-text">CONTACT</p>
+          <h1 class="display-3 bold">Interested In Working Toegheter?</h1>
+          <form
+            action="POST"
+            class="row g-lg-3 gy-3 mx-auto mt-5"
+            data-netlify="true"
+            onSubmit="submit"
+            data-netlify-honeypot="bot-field"
+            name="contact"
+          >
+            <input name="bot-field" class="d-none" />
+            <div class="form-group col-md-6">
+              <input
+                name="name"
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                id="input-name"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1200"
+              />
+            </div>
+            <div class="form-group col-md-6">
+              <input
+                name="email"
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                id="input-email"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="1500"
+              />
+            </div>
+            <div class="from-row">
+              <textarea
+                name="message"
+                class="form-control"
+                id="content-input"
+                cols="4"
+                rows="12"
+                placeholder="Enter message here"
+                data-aos="fade-in"
+                data-aos-delay="200"
+                data-aos-duration="3000"
+              ></textarea>
+            </div>
+            <div class="form-row">
+              <button
+                type="submit"
+                class="link-button"
+                data-aos="fade-in"
+                data-aos-delay="200"
+                data-aos-duration="3000"
+              >
+                Send
+                <i class="las la-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- //CONTACT SECTION-->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./main.js"></script>
+  </body>
 </html>
