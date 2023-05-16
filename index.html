@@ -266,8 +266,12 @@
                     helps me with setting dark theme. Page is responsive and
                     look a little bit different on laptop and mobile. For React
                     requests I used axios, for user authentication I used jwt.
-                    These are my first steps in front-end development using
-                    Typescript.
+                    Implemented features: posts, comments, relathionships,
+                    likes, chat. To display active users indicator which is
+                    green dot I used socket.Io. Using triggers in MySQL I added
+                    notification when friends post, comment or like. Additionaly
+                    using SQL query I fetch recomended friends, other users who
+                    follow the main user and main user does not follow them.
                   </p>
                   <div class="project-technologies mt-2">
                     <i
@@ -293,7 +297,7 @@
                     target="_blank"
                     href="https://befake.danielsprojects.com.pl/"
                     class="underline-button"
-                    >Click here!</a
+                    >Live demo - here!</a
                   >
                 </div>
               </div>
@@ -318,7 +322,8 @@
                     and making simple requests. For UI I used mentioned React
                     with styled-components. To make requests in React I used the
                     Axios library. For user authentication I used JWT. To handle
-                    the cart and logged user I used Redux library.
+                    the cart and logged user I used Redux library. I implemented
+                    payment using Stripe.
                   </p>
                   <div class="project-technologies mt-2">
                     <i
@@ -344,7 +349,7 @@
                     target="_blank"
                     href="https://neobonk.onrender.com/"
                     class="underline-button"
-                    >Click here!</a
+                    >Live demo - here!</a
                   >
                 </div>
               </div>
@@ -402,6 +407,54 @@
                       class="las la-newspaper"
                     ></i>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xl-6 rounded-4"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="1200"
+            >
+              <div class="project-card rounded-4 card-bg shadow-effect">
+                <div class="project-snapshot rounded-4">
+                  <img src="/img/Newslix.png" alt="" />
+                </div>
+                <div class="project-description p-4">
+                  <h3>Newslix - News aggregate</h3>
+                  <p class="lead" style="margin-bottom: 87px">
+                    Small news application using React + Redux and Newsapi.org.
+                    On the left bar, the user can choose a country for which
+                    news will be fetched. On the navbar there is the switch,
+                    news can be displayed in the list or tailes. I added
+                    English, Polish and Ukrainian translations using i18next. I
+                    wrote tests for application using vitest. The application is
+                    mobile-friendly :)
+                  </p>
+                  <div
+                    class="project-technologies mt-2"
+                    style="margin-bottom: 23px"
+                  >
+                    <i
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="React"
+                      class="lab la-react"
+                    ></i>
+                    <i
+                      style="color: rgb(63, 63, 149)"
+                      data-toggle="tooltip"
+                      data-placement="bottom"
+                      title="NewsApi"
+                      class="las la-newspaper"
+                    ></i>
+                  </div>
+                  <a
+                    target="_blank"
+                    href="https://newslix.danielsprojects.com.pl/"
+                    class="underline-button"
+                    >Live demo - here!</a
+                  >
                 </div>
               </div>
             </div>
