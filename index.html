@@ -116,11 +116,10 @@
             data-aos-delay="1000"
             data-aos-duration="1000"
           >
-            I'm working almost 3 years as QA Automation Engineer, since 2022 in
-            the meantime I work on my full stack side projects projects. I love
-            expanding my knowledge so I build this website to show my frontend
-            skills. You can see my projects by clicking on the orange button. If
-            you want to cooperate contact me usign Contact button.
+            I've been working as QA Automation Engineer since 2021. In 2022 I
+            found interest in building full-stack applications. You can see my
+            projects by clicking on the orange button. If you want to cooperate
+            contact me usign Contact button.
           </p>
           <a
             href="#projects"
@@ -256,21 +255,18 @@
                     <img src="/img/Notan.png" alt="" />
                   </div>
                   <div class="project-description p-4">
-                    <h3>Notan - futuristic notes with private AI 🪄</h3>
+                    <h3>Notan - collaboartive note-taking</h3>
                     <p class="lead">
                       Free Notes application with private language model. In
-                      this application I used tailwind and Nextjs. Currently, I
-                      am chaning my idea from sass notes application to offline
-                      open source approach with private ai model to keep all of
-                      the data offline. Current model uses Supabase in the
-                      future this will be replaced with postgresql or sqlite. As
-                      AI model I will use TinyLlama-1.1B-Chat-v1.0 which is
-                      small, open source and produces very good answers. Model
-                      will help with summarizing notes, answering questions
-                      based on own knowledge and documents. Desktop application
-                      will be build using tauri which creates smaller and more
-                      secure exe files. For styling I used tailwind framework
-                      which helps with fast building neat apps.
+                      this application I used tailwind, Nextjs, MySQL and
+                      Drizzle ORM. Application has own collaboration server
+                      which provide real time selection and writing between
+                      users. As rich text editor I chose TipTap which has great
+                      extension system and supports collaboration server. In
+                      application user can create workspace for folders with
+                      files. In the future I'd like to implement RAG feature to
+                      be able to 'talk' with own documents. Application can be
+                      build using docker-compose.
                     </p>
                     <div class="project-technologies mt-2">
                       <i
@@ -288,10 +284,16 @@
                       <i
                         data-toggle="tooltip"
                         data-placement="bottom"
-                        title="PostgreSQL"
+                        title="MySQL"
                         class="las la-database"
                       ></i>
                     </div>
+                    <a
+                      target="_blank"
+                      href="https://github.com/Danieljazz/Notan"
+                      class="underline-button"
+                      >Git repo - here!</a
+                    >
                   </div>
                 </div>
               </div>
@@ -421,21 +423,19 @@
                     <p class="lead">
                       Social media app built with React. To keep all of the
                       users data I used the MySQL database instead of MongoDB.
-                      For the backend I used Node.js and Express. Instead of
-                      redux, I used useContext hook because it is better for
-                      small applications. This hook helps with setting the
-                      current user and dark theme. For styling the components I
-                      used SASS which is slightly different approach comparing
-                      to my prevoius project. This helps me with setting dark
-                      theme. Page is responsive and look a little bit different
-                      on laptop and mobile. For React requests I used axios, for
-                      user authentication I used jwt. Implemented features:
-                      posts, comments, relathionships, likes, chat. To display
-                      active users indicator which is green dot I used
-                      socket.Io. Using triggers in MySQL I added notification
-                      when friends post, comment or like. Additionaly using SQL
-                      query I fetch recomended friends, other users who follow
-                      the main user and main user does not follow them.
+                      For the backend I used Node.js and Express.For styling the
+                      components I used SASS which is slightly different
+                      approach comparing to my prevoius project. This helps me
+                      with setting dark theme. Page is responsive and look a
+                      little bit different on laptop and mobile. For React
+                      requests I used axios, for user authentication I used jwt.
+                      Implemented features: dark-theme, posts, comments,
+                      relathionships, likes, chat. To display active users
+                      indicator which is green dot I used socket.Io. Using
+                      triggers in MySQL I added notification when friends post,
+                      comment or like. Additionaly using SQL query I fetch
+                      recomended friends, other users who follow the main user
+                      and main user does not follow them.
                     </p>
                     <div class="project-technologies mt-2">
                       <i
